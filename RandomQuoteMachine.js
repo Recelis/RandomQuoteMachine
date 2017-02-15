@@ -7,9 +7,10 @@ $(document).ready(function() {
             url: url,
         success: function(data){
             console.log(data);
+            console.log(data["contents"].quotes[0].author);
         }
         });
-        alert("NOOOOOOOOOOO!");
+        alert("Testing 1 2 3... please remove");
     });
 });
 
