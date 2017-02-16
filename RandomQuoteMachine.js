@@ -1,5 +1,6 @@
 var prevColor = 8;
-
+var quote = "";
+ var twitterQuote = "";
 
 $(document).ready(function() {
     var url = "http://api.icndb.com/jokes/random?limitTo=[nerdy]";
@@ -21,12 +22,20 @@ $(document).ready(function() {
             success: function(data){
             console.log(data);
             console.log(data["value"].joke);
+            quote = data["value"].joke;
             $(".quote").html("\""+ data["value"].joke+"\""); // can affect text in html, here emphasis
             // console.log(data["contents"].quotes[0].quote);
             // http://www.icndb.com/api/
+            if (quote.length >= 131){
+                twitterQuote =  "\"" + quote.substring(0,126) + "...\" -the Man";
+            } else{
+                twitterQuote =  "\"" + quote.substring(0,131) + "\" -the Man";
+            }
+            $("a").attr("href", "https://twitter.com/intent/tweet?text="+twitterQuote);
+            console.log("the NEW " + twitterQuote);
         }
         });
-    // var quote; 
+    
     $('#randQuote').click(function(){
         $.ajax({
             type: "GET",
@@ -37,7 +46,15 @@ $(document).ready(function() {
             console.log(data["value"].joke);
             $("#box").hide().fadeIn(800);
             $(".title").hide().fadeIn(800);
+            quote = data["value"].joke;
             $(".quote").html("\""+ data["value"].joke+"\""); // can affect text in html, here emphasis
+            if (quote.length >= 131){
+                twitterQuote =  "\"" + quote.substring(0,126) + "...\" -the Man";
+            } else{
+                twitterQuote =  "\"" + quote.substring(0,131) + "\" -the Man";
+            }
+            // $(".tweet").html(twitterQuote);
+            $("a").attr("href", "https://twitter.com/intent/tweet?text="+twitterQuote);
             var size = Object.keys(colorJSON).length;
             var randomColorIndex = prevColor;
             while (randomColorIndex == prevColor){
@@ -54,5 +71,8 @@ $(document).ready(function() {
         });
         // alert("Testing 1 2 3... please remove");
     });
+    
 });
+
+
 

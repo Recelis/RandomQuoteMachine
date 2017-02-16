@@ -47,6 +47,7 @@ body{
 }
 
 #endText{
+    font-family:'Raleway', serif;
     color: red;
     opacity: 0.8;
 }
