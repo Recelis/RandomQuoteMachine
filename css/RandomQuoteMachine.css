@@ -1,16 +1,52 @@
 
 body{
     background-image: url(https://images.bonanzastatic.com/afu/images/2105/4654/22/deltaforcebwvmm.jpg);
+    /*background-image:url(http://www.zastavki.com/pictures/1920x1200/2011/Drawn_wallpapers_Vector_Wallpapers_Chuck_Norris_degeneration_029945_.jpg)*/
+    /*background-image: url(https://images7.alphacoders.com/405/405808.jpg);*/
     }
 
 .title{
-    font-family: 'Slabo 27px', serif;
-    color: #3f3fe3;
+    font-family: 'Barrio', cursive;
+    color: black;
+     text-align:center;
+     font-szie:30px;
+     font-weight:bold;
 }
 
 .quote{
     font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 30px;
+
 }
 
+#box{
+    background-color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    width:600px;
+    text-align:center;
+    left: 25%;
+    right: 25%;
+    top: 50%;
+    position: absolute;
+    opacity: 0.8;
+}
 
+#randQuote{
+    padding: 5px; 
+    padding-right:20px;
+    padding-left: -5px;
+}
 
+.end{
+   top: 10%;
+   left:25%;
+   right:25%;
+   text-align: center;
+}
+
+#endText{
+    color: red;
+    opacity: 0.8;
+}
