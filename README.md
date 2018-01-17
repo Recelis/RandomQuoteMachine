@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-# RandomQuoteMachine
+#Random Quote Machine
 
+Built for FreeCodeCamp's Random Quote Machine. 
 
-=======
-# RandomQuoteMachine
+Uses chuck norris https://api.chucknorris.io/#!
 
-
->>>>>>> f5a3f88886a9e1c5743d04c516577be3bda8b95f
+Made with Passion.

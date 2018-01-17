@@ -1,13 +1,15 @@
 
 body{
-    background-image: url("../images/chucknorris.jpg");
-    /*background-image:url(http://www.zastavki.com/pictures/1920x1200/2011/Drawn_wallpapers_Vector_Wallpapers_Chuck_Norris_degeneration_029945_.jpg)*/
+    /* background-image: url("../images/chucknorris.jpg"); */
+    /* background-image:url("http://www.zastavki.com/pictures/1920x1200/2011/Drawn_wallpapers_Vector_Wallpapers_Chuck_Norris_degeneration_029945_.jpg") */
     /*background-image: url(https://images7.alphacoders.com/405/405808.jpg);*/
+    background-image:url("../images/chucknorriswhitebackground.jpg");
+    background-size:cover;
     }
 
 .title{
     font-family: 'Lobster', cursive;
-    color: white;
+    color: grey;
      text-align:center;
      font-size:60px;
      margin-top:30px;
@@ -22,7 +24,7 @@ body{
 }
 
 #box{
-    background-color: black;
+    background-color: transparent;
     font-weight: bold;
     border-radius: 25px;
     width:600px;
@@ -30,7 +32,7 @@ body{
     margin: 0 auto;
     margin-top:25%;
     position: relative;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 #randQuote{
@@ -47,7 +49,19 @@ body{
 }
 
 #endText{
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    width:300px;
+    margin-left:-150px;
     font-family:'Raleway', serif;
-    color: red;
-    opacity: 0.8;
+    color: white;
+    opacity: 1;
 }
+
+.github{
+    width:50px;
+    height:50px;
+    border:solid 0px transparent;
+    background-color:transparent;
+  }
