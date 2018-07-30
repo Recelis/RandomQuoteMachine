@@ -5,23 +5,40 @@ body{
     /*background-image: url(https://images7.alphacoders.com/405/405808.jpg);*/
     background-image:url("../images/chucknorriswhitebackground.jpg");
     background-size:cover;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:stretch;
     }
+
+header{
+    align-self:flex-start;
+}
 
 .title{
     font-family: 'Lobster', cursive;
     color: grey;
-     text-align:center;
-     font-size:60px;
-     margin-top:30px;
-     font-weight:bold;
+    text-align:center;
+    font-size:60px;
+    font-weight:bold;    
 }
 
-.quote{
+#quote-box{
     font-family: 'Raleway', sans-serif;
-    color: white;
+    color: black;
     font-size: 30px;
-    background-color:rgba(0, 0, 0, 0.15);
+    background-color:rgba(255, 255, 255, 0.5);
+    padding:30px;
+    width:60%;
+    margin:auto;
+    border-radius:5px;
+    border: solid 3px black;
+}
 
+#author{
+    font-family:'Raleway', sans-serif;
+    font-size:16px;
 }
 
 #box{
@@ -36,10 +53,28 @@ body{
     opacity: 1;
 }
 
-#randQuote{
-    padding: 5px; 
-    padding-right:20px;
-    padding-left: -5px;
+#new-quote{
+    background-color:darkred;
+    border-radius:5px;
+    border:none;
+    color:white;
+}
+
+#new-quote:hover{
+    background-color:rgb(94, 1, 1);
+}
+
+#twitter{
+    color:#00aced;
+}
+
+#twitter:hover{
+    color:#008ec2; 
+}
+
+.wrapper{
+    display:flex;
+    justify-content:space-between;
 }
 
 .end{
@@ -49,16 +84,17 @@ body{
    text-align: center;
 }
 
-#endText{
-    margin:30px;
-    font-family:'Raleway', serif;
-    color: white;
-    opacity: 1;
-}
-
 .github{
     width:50px;
     height:50px;
     border:solid 0px transparent;
     background-color:transparent;
+  }
+
+  footer{
+      background-color:white;
+      color:black;
+      font-family:'Raleway', serif;
+      padding-top:15px;
+      padding-bottom:30px;
   }

@@ -32,21 +32,32 @@ control shift k for firefox console
     <link rel="stylesheet" type="text/css" href="css/RandomQuoteMachine.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/ac27cdaef0.js"></script>
+    <script tyle = "text/javascript" src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
-  <body class="container-fluid">
-    <h1 class="title">Chuck Norris Truths</h1>
-    <div id = "box">
-      <p class = "quote"></p> 
-      <p style="color:white; font-family:Raleway"> -The Man </p>
+
+
+  <body>
+    <header>
+      <h1 class="title">Chuck Norris Truths</h1>
+    </header>
+    
+    <section>
+      <div id = "quote-box">
+      <p id = "text" class = "quote"></p> 
+      <p id = "author"> -The Man </p>
       <p class="tweet"></p>
-      <a class="twitter-share-button"><i class="fa fa-twitter col-xs-6" style="color:white" id = "twitter"></i> </a>
-      <button class="btn" id = "randQuote"><span> <i class="fa fa-hand-rock-o punch"></i></span>Punch out a quote!</button>
-    </div>
-    <div class = "end">
-      <p id = "endText"> created by Jackie Lui 2017
-        <span><button onClick = "openWindow()" class = "github"><img class = "github" src = "./images/github.png"></img></button></span>
+      <div class = "wrapper">
+        <a id = "tweet-quote" class="twitter-share-button"><i class="fa fa-twitter" id = "twitter"></i> </a>
+        <button id = "new-quote"><span> <i class="fa fa-hand-rock-o punch"></i></span>Punch out quote!</button>
+      </div>
+      </div>
+    </section>
+
+    <footer class = "end">
+      <p id = "endText"> Warning, quotes can be quite rude. Created by Jackie Lui 2017, updated 2018. All quotes from <a href = "https://api.chucknorris.io/jokes/random">Chuck Norris IO</a>
+        <a href = "https://github.com/Recelis/RandomQuoteMachine" target="_blank" class = "github"><img class = "github" src = "./images/github.png"></img></a>
       </p>
-    </div>  
+    </footer>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

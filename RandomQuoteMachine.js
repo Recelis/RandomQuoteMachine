@@ -6,7 +6,7 @@ var url = "https://api.chucknorris.io/jokes/random";
 
 $(document).ready(function() {
     apiCall(); 
-    $('#randQuote').click(function(){
+    $('#new-quote').click(function(){
         $("body").css("background-image","url(./images/chucknorrisdark.png)");
         apiCall();
     });
@@ -19,19 +19,17 @@ function apiCall(){
         success: function(data){
             $("body").css("background-image","url(./images/chucknorriswhitebackground.jpg)")
             quote = data["value"];
-            $(".quote").html("\""+ data["value"]+"\"");
+            $("#text").html("\""+ data["value"]+"\"");
+            $("#author").html("-" + data["id"] + ": the Man's Mortal Voice");
             if (quote.length >= 131){
                 twitterQuote =  "\"" + quote.substring(0,126) + "...\" -the Man";
             } else{
                 twitterQuote =  "\"" + quote.substring(0,131) + "\" -the Man";
             }
-            $("a").attr("href", "https://twitter.com/intent/tweet?text="+twitterQuote);
+            $("#tweet-quote").attr("href", "https://twitter.com/intent/tweet?text="+twitterQuote);
     }
     });
 }
 
-function openWindow(){
-    window.open("https://github.com/Recelis/RandomQuoteMachine",'_blank');
-}
 
 
